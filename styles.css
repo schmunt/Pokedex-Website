@@ -1,0 +1,105 @@
+* {
+	box-sizing: border-box;
+  --main-color: #ff0000;
+  --seconday-color: #3b4cca;
+  --accent-color1: #ffde00;
+  --accent-color2: #fff;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0px auto;
+  font-family: 'Signika Negative', sans-serif;
+  max-width: 1000px;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 45px;
+  color: var(--main-color);
+  border-width: 5px;
+  border-style: solid;
+  border-image: linear-gradient(to right, var(--main-color), var(--seconday-color)) 1;
+  padding: 10px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+ul li {
+  list-style: none;
+  padding: 10px;
+  background: var(--accent-color1);
+  border-radius: 10px;
+  margin: 5px;
+}
+
+ul a {
+  text-decoration: none;
+  color: var(--seconday-color);
+  font-weight: bold;
+}
+
+#main-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.card {
+  text-align: center;
+  background: linear-gradient(135deg, var(--main-color), var(--seconday-color));
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 20px;
+  width: 200px;
+  color: var(--accent-color2);
+}
+
+.card .sprite-container {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-color: var(--accent-color2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin: 15px;
+}
+
+.card .index {
+	background-color: var(--accent-color1);
+  color: var(--seconday-color);
+  font-weight: bold;
+	border-radius: 10px;
+	padding: 5px 8px;
+  font-size: 14px;
+}
+
+.card .types-div h4 {
+  margin-bottom: 5px;
+}
